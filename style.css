@@ -43,10 +43,7 @@ body{
 }
 
 .Threads{
-    margin-top: 120px;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-end;
+    margin-top: 100px;
 }
 
 /* LEFT TOP CONTENT */
@@ -77,19 +74,31 @@ body{
 }
 
 /* FIRST LINE BTNs */
+.Button {
+    margin: 20px 2px -10px 5px;
+    color: white;
+    border-radius: 7px;
+    padding: 4px 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: condensed;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+
 .Follow-BTN{
     margin: 20px 2px -10px 5px;
     background-color: rgb(36, 148, 252);
+    border: 2px solid rgb(36, 148, 252);
     color: white;
     border-radius: 7px;
-    border: 2px solid  rgb(36, 148, 252); 
     padding: 4px 6px 4px 6px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-stretch: condensed;
     font-size: 0.9rem;
 }
 .Follow-BTN:hover{
-    background-color:rgb(0, 127, 247) ;
+    background-color: rgb(0, 127, 247);
     border: 2px solid rgb(0, 127, 247);
 }
 
@@ -266,13 +275,14 @@ body{
     transition: opacity 0.3s ease; 
     text-align: center; 
 }
-.Posts:hover p {
+/* .Posts:hover p {
     opacity: 1; 
-}
+} */
 #post1:hover,#post2:hover,#post3:hover,#post4:hover,#post5:hover,#post6:hover,#post7:hover,#post8:hover,#post9:hover,#post10:hover,#post11:hover,#post12:hover {
     transform: scale(1.02); 
     filter: brightness(40%); 
 }
+
 #post1:hover p,
 #post2:hover p,
 #post3:hover p,
@@ -302,129 +312,4 @@ body{
 /* SHOW BOTH PARAGRAPHS ON HOVER */
 .Posts div:hover p {
     opacity: 2; 
-}
-
-/* RESPONSIVE */
-
-@media only screen and (max-width: 480px) {
-    /* Hide the side navigation bar and adjust the left-side content */
-    .side-nav {
-        display: none;
-    }
-
-    /* Adjust main content to take full width */
-    .left-side, .Account-Details {
-        position: relative;
-        left: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    /* Center the profile image and reduce its size */
-    .ProfilePic img {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    /* Reduce button sizes and align them vertically */
-    .Follow-BTN, .Message-BTN, .Similar-accounts-BTN, .More-BTN {
-        width: 100%;
-        margin: 10px auto;
-        font-size: 0.8rem;
-        padding: 8px;
-    }
-
-    /* Adjust the 2nd line of navigation links */
-    .Top-2ndLine li {
-        display: block;
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    /* Make highlights smaller */
-    .Highlights {
-        margin-left: 0;
-        text-align: center;
-    }
-    .Highlights li {
-        margin: 15px 5px;
-    }
-    .Highlight {
-        width: 60px;
-        height: 60px;
-    }
-    .Highlights h6 {
-        font-size: 0.7em;
-        margin: 5px 0;
-    }
-
-    /* Stack post grid items vertically */
-    .Posts {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Make single column for posts */
-        margin: 20px auto;
-    }
-    .Posts div {
-        width: 100%; /* Make each post take full width */
-        height: 300px; /* Adjust height to fit smaller screens */
-    }
-}
-
-/* Landscape mobile screen (max-width: 768px) */
-@media only screen and (max-width: 768px) {
-    /* Adjust the side navigation width */
-    .side-nav {
-        width: 20%;
-        height: 100%;
-    }
-
-    /* Center the profile image and slightly reduce its size */
-    .ProfilePic img {
-        width: 10rem;
-        height: 10rem;
-        margin: 0 auto auto 20px;
-        display: block;
-    }
-
-    /* Adjust main content width */
-    .left-side, .Account-Details {
-        position: relative;
-        left: 0;
-        margin: 0 auto auto 190px; 
-        width: 85%;
-    }
-
-    /* Reduce button sizes */
-    .Highlights{
-      display: grid;
-      margin-left:20%;
-    }
-
-    .Highlights li{
-        display: inline-flex;
-        flex-direction: row;
-        margin: 10px;
-    }
-
-    /* Adjust the 2nd line of navigation links */
-    .Top-2ndLine li {
-        margin: 10px 10px;
-        font-size: 1rem;
-    }
-
-    /* Adjust grid layout of posts */
-    .Posts {
-        grid-template-columns: repeat(3, minmax(250px, 1fr)); 
-        margin: auto auto auto 35%;
-        row-gap: 15px;
-    }
-    .Posts div {
-        display: grid;
-        row-gap: 5px;
-        column-gap: -5px;
-        width: 100%; 
-        height: 100%;
-    }
 }
