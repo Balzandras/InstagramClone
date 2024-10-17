@@ -1,0 +1,430 @@
+/* WHOLE BODY FONT */
+body{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+/* SIDE-NAV-BAR */
+.side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-right: .5px solid lightgray;
+}
+.hr{
+    border: 0.5px solid lightgray;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.side-nav img{
+    margin: 10px 0px -10px 20px;
+    background-color: #f5f5f5;
+    color: whitesmoke;
+}
+
+.side-nav li{
+    list-style-type: none;  
+    padding: 5px 0px auto 5px;
+    display: flex;
+    padding: 15px 10px 15px 15px;
+    margin-left: -30px;
+    font-size: 18px;
+}
+.side-nav li:hover{
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.side-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.Threads{
+    margin-top: 120px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* LEFT TOP CONTENT */
+.ProfilePic img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 200px;
+    margin-top: -10px;
+    /* border: 5px solid lightgray; */
+}
+.left-side{
+    position: relative;
+    left: 400px;
+    right: auto;
+    top: 50px;
+    margin-right: 800px;
+}
+
+.Account-Details{
+    position: relative;
+    left: 280px;
+    top: -230px; 
+}
+
+.Top-1stLine{
+    display: inline-flex;
+    
+}
+
+/* FIRST LINE BTNs */
+.Follow-BTN{
+    margin: 20px 2px -10px 5px;
+    background-color: rgb(36, 148, 252);
+    color: white;
+    border-radius: 7px;
+    border: 2px solid  rgb(36, 148, 252); 
+    padding: 4px 6px 4px 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: condensed;
+    font-size: 0.9rem;
+}
+.Follow-BTN:hover{
+    background-color:rgb(0, 127, 247) ;
+    border: 2px solid rgb(0, 127, 247);
+}
+
+.Message-BTN,.Similar-accounts-BTN,.More-BTN{
+    margin: 20px 2px -10px 5px;
+    background-color: rgb(123, 123, 123);
+    color: white;
+    border-radius: 7px;
+    border: 2px solid rgb(123, 123, 123); 
+    padding: 4px 6px 4px 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: condensed;
+    font-size: 0.9rem;
+}
+.Message-BTN:hover,.Similar-accounts-BTN:hover,.More-BTN:hover{
+    background-color: rgb(75, 75, 75);
+    border: 2px solid rgb(75, 75, 75); 
+}
+
+/* TOP SECOND LINE */
+.Top-2ndLine li{
+    display: inline-flex;
+    justify-content: flex-start;
+    position: relative;
+    left: -30px;
+    top: -10px;
+    margin-right: 20px;
+    color: rgba(46, 46, 46, 0.824);
+    font-size: 1.1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Top-2ndLine b{
+    color: black;
+    font-weight: 500;
+    font-stretch:narrower;
+}
+
+/* BIO */
+.Account-about P{
+    margin-bottom:-7px ;
+    margin-top: 15px;
+}
+
+.Thread-BTN{
+    width: 120px; 
+    height: 18px; 
+    padding: 0px 2px 7px 2px;
+    background-color: lightgray;
+    color: black;
+    font-size: 1.1rem;
+    margin: 20px 0px -5px 0px;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+} 
+
+.Account-about a{
+    text-decoration: none;
+    color:rgb(0, 0, 0) ;
+    font-weight: 550;
+}
+.Followed{
+    color: rgb(80, 80, 80);
+}
+.Followed a{
+    color:black;
+}
+
+/* HIGHLIGHTS SECTION */
+.Highlights{    
+    margin-left: 250px;
+    /* margin-right: 50px; */
+}
+.Highlights li{
+    display:inline-block;
+    justify-content: center;
+    margin: -200px 2px 0px 15px;
+}
+
+.Highlight {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin:-300px 0px 0px 15px;
+    border: 4px solid lightgray;
+    /* border: 2px solid red; */
+}
+.Highlights h6{
+    font-size: .8em;
+    margin: 10px 15px 0px 30px ;
+    /* border: 2px solid red; */
+}
+
+.Highlight:hover{
+    transform: scale(1.15);
+    transition: 300ms;
+}
+
+/* NAV BAR */
+
+.Nav-Bar{
+    display: flex;
+    justify-content: center;  
+    margin-left: 150px;
+}
+.Nav-Bar li{
+    display: inline-flex;
+    /* margin-bottom: 10px; */
+    
+}
+.nav{
+    display: flex;
+    margin-left:50px;
+    font-size: 1em;
+}
+
+.nav i {
+    margin-right: 10px; 
+    margin-top: 2px;
+}
+
+.nav:hover{
+    background-color: #262626;
+    border-radius: 20px;
+    padding: 7px;
+    color: white;
+    font-size: 1em;
+}
+
+/* POSTS */
+.postpic {
+    width: 350px; 
+    height: 350px; 
+    object-fit: cover; 
+    /* border-radius: 5px;  */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+    margin-top: -10px;
+}
+
+.Posts{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    column-gap: 30px;
+    position: relative;
+    row-gap: -5px;   
+    margin: 0px 170px 0px 300px;
+}
+
+.Posts div {
+    position: relative; 
+    overflow: hidden; 
+    width: 350px; 
+    height: 350px; 
+}
+.Posts div:hover .postpic {
+    transform: scale(1.01); 
+}
+.Posts {
+    position: relative; 
+    text-align: center;
+}
+
+
+.Posts p {
+    display: inline-block; 
+    margin: 0 5px; 
+    position: absolute; 
+    left: 50%;
+    font-size: 1.5rem; 
+    transform: translateX(-50%); 
+    color: white; 
+    padding: 10px; 
+    margin: 0; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    text-align: center; 
+}
+.Posts:hover p {
+    opacity: 1; 
+}
+#post1:hover,#post2:hover,#post3:hover,#post4:hover,#post5:hover,#post6:hover,#post7:hover,#post8:hover,#post9:hover,#post10:hover,#post11:hover,#post12:hover {
+    transform: scale(1.02); 
+    filter: brightness(40%); 
+}
+#post1:hover p,
+#post2:hover p,
+#post3:hover p,
+#post4:hover p,
+#post5:hover p,
+#post6:hover p,
+#post7:hover p,
+#post8:hover p,
+#post9:hover p,
+#post10:hover p,
+#post11:hover p,
+#post12:hover p {
+    opacity: 1; 
+    filter: brightness(-50%);
+}
+
+.Posts p:first-of-type {
+    top: 40%; 
+    left: 120px;
+}
+
+.Posts p:last-of-type {
+    top: 40%; 
+    left: 230px;
+}
+
+/* SHOW BOTH PARAGRAPHS ON HOVER */
+.Posts div:hover p {
+    opacity: 2; 
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+    /* Hide the side navigation bar and adjust the left-side content */
+    .side-nav {
+        display: none;
+    }
+
+    /* Adjust main content to take full width */
+    .left-side, .Account-Details {
+        position: relative;
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Center the profile image and reduce its size */
+    .ProfilePic img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Reduce button sizes and align them vertically */
+    .Follow-BTN, .Message-BTN, .Similar-accounts-BTN, .More-BTN {
+        width: 100%;
+        margin: 10px auto;
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    /* Adjust the 2nd line of navigation links */
+    .Top-2ndLine li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Make highlights smaller */
+    .Highlights {
+        margin-left: 0;
+        text-align: center;
+    }
+    .Highlights li {
+        margin: 15px 5px;
+    }
+    .Highlight {
+        width: 60px;
+        height: 60px;
+    }
+    .Highlights h6 {
+        font-size: 0.7em;
+        margin: 5px 0;
+    }
+
+    /* Stack post grid items vertically */
+    .Posts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Make single column for posts */
+        margin: 20px auto;
+    }
+    .Posts div {
+        width: 100%; /* Make each post take full width */
+        height: 300px; /* Adjust height to fit smaller screens */
+    }
+}
+
+/* Landscape mobile screen (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    /* Adjust the side navigation width */
+    .side-nav {
+        width: 20%;
+        height: 100%;
+    }
+
+    /* Center the profile image and slightly reduce its size */
+    .ProfilePic img {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto auto 20px;
+        display: block;
+    }
+
+    /* Adjust main content width */
+    .left-side, .Account-Details {
+        position: relative;
+        left: 0;
+        margin: 0 auto auto 190px; 
+        width: 85%;
+    }
+
+    /* Reduce button sizes */
+    .Highlights{
+      display: grid;
+      margin-left:20%;
+    }
+
+    .Highlights li{
+        display: inline-flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    /* Adjust the 2nd line of navigation links */
+    .Top-2ndLine li {
+        margin: 10px 10px;
+        font-size: 1rem;
+    }
+
+    /* Adjust grid layout of posts */
+    .Posts {
+        grid-template-columns: repeat(3, minmax(250px, 1fr)); 
+        margin: auto auto auto 35%;
+        row-gap: 15px;
+    }
+    .Posts div {
+        display: grid;
+        row-gap: 5px;
+        column-gap: -5px;
+        width: 100%; 
+        height: 100%;
+    }
+}
