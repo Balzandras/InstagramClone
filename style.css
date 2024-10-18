@@ -343,6 +343,9 @@ body {
 
 @media (max-width: 1024px) {
     .Posts {
+        grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+    }
+    .Posts {
         margin: 0 20px; /* Reduce margins for smaller screens */
     }
     .Highlights {
