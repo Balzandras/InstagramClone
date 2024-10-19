@@ -370,10 +370,10 @@ body {
         position: relative;
         left: 330px;
     }
-    .Highlights{
+    /* .Highlights{
         position: relative;
         left: 150px;
-    }
+    } */
     .Highlights li img{
         position: relative;
         right: -50px;
@@ -415,8 +415,9 @@ body {
        
     }
 
-    .Highlights{
-        flex-direction: column; /* Stack highlights vertically */
+    /* .Highlights{
+        flex-direction: column; 
+        /Sack highlights vertically 
         align-items: center;
-    }
+    }  */
 }
