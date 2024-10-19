@@ -366,7 +366,9 @@ body {
         margin: left -800px; ;
     }
     .Nav-Bar{
-        margin-left: 250px;
+        margin-left: -150px;
+        position: relative;
+        left: 330px;
     }
     .Highlights{
         position: relative;
@@ -402,12 +404,15 @@ body {
     .Posts {
         grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
     }
+
     .Top-2ndLine li{
         display: inline;
     }
     .Nav-Bar{
-        margin-left: 500px;
-        display: inline;
+        margin-left: -150px;
+        position: relative;
+        left: 380px;
+       
     }
 
     .Highlights{
